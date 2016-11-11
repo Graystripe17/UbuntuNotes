@@ -8,7 +8,9 @@ Cyberpatriots checklists and note resources
 http://cyberpatriotarchives.com/Checklists/Checklist%20-%20Ubuntu%202%20-%20cochise.pdf
 http://cyberpatriotarchives.com/Checklists/Checklist%20-%20Ubuntu%20-%20cochise.pdf
 
+
 # Note: Second Checklist is in Repo
+
 
 # Command 101 Incase You Forgot
 ```python
@@ -28,8 +30,7 @@ grep [options] pattern [filesname]	# Search files or output for a particular pat
 kill [options] pid	Stop a process. # If the process refuses to stop, use kill -9 pid.
 less [options] [filename]	# View the contents of a file one page at a time.
 ln [options] source [destination]	# Create a shortcut.
-locate filename	# Search a copy of your filesystem for the specified
-filename.
+locate filename	# Search a copy of your filesystem for the specified filename.
 ls [options]	# List directory contents.
 man [command]	# Display the help information for the specified command.
 mkdir [options] # directory	Create a new directory.
@@ -40,8 +41,7 @@ rm [options] # directory	Remove (delete) file(s) and/or directories.
 rmdir [options] # directory	Delete empty directories.
 su [options] [user [arguments]]	# Switch to another user account.
 tar [options] filename	# Store and extract files from a tarfile (.tar) or tarball (.tar.gz or .tgz).
-top	# Displays the resources being used on your system. Press q to
-exit.
+top	# Displays the resources being used on your system. Press q to exit.
 touch filename	# Create an empty file with the specified name.
 who [options]	# Display who is logged on.
 ```
@@ -85,9 +85,12 @@ service dovecot stop # Type of email server
 service --status-all | grep "+" # shows programs with a return code of 0 (C/C++ users will understand), which is non-native programs 
 ```
 
+
 # DNS Check: Check /etc/hosts file for unauthorized users
 
+
 # MAKE SURE TO UPDATE EVERYTHING
+
 
 # Password Requirement 101
 Accessing Files
