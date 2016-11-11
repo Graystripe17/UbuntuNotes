@@ -7,6 +7,7 @@ Cyberpatriots checklists and note resources
 # Checklist
 http://cyberpatriotarchives.com/Checklists/Checklist%20-%20Ubuntu%202%20-%20cochise.pdf
 
+# Checklist #2 in PDF Form on Repo
 
 # List processes
 List processes `lsop -i -n -P`  <br/>
@@ -31,3 +32,4 @@ Remove netcat
 
 # ufw
 sudo ufw enable
+
