@@ -120,17 +120,17 @@ UsePAM yes
 
 # FTP Management
 ```python
-Refer to pdf for some good FTP settings
+Refer to pdf #2 for some good FTP settings
 ```
 
 # Apache2 Management
 ```python
-Refer to pdf for some good Apache2 settings
+Refer to pdf #2 for some good Apache2 settings
 ```
 
 # Samba Management
 ```python
-Refer to pdf for some good Samba settings
+Refer to pdf #2 for some good Samba settings
 ```
 
 # /etc/rc.local
