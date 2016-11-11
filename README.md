@@ -61,8 +61,58 @@ Password shadow file 'chmod o-r shadow'
 ufw enable
 ufw disable
 ```
+<<<<<<< HEAD
 
 # Correct Permissions
+```python
+chmod -R 444 /var/log # read permission to everyone
+chmod 440 /etc/passwd # read permission to current user and other members of group
+chmod 440 /etc/shadow
+chmod 440 /etc/group
+chmod -R 444 /etc/ssh
+```
+
+# Services 101 (do not assume all of these need to be stopped)
+```python
+service sshd stop # You better know what this is or you're about to have a bad time
+service telnet stop # Remote Desktop Protocol
+service vsftpd stop # FTP server
+service snmp stop # Type of email server
+service pop3 stop # Type of email server
+service icmp stop # Router communication protocol
+service sendmail stop # Type of email server
+service dovecot stop # Type of email server
+service --status-all | grep "+" # shows programs with a return code of 0 (C/C++ users will understand), which is non-native programs 
+```
+
+# DNS Check: Check /etc/hosts file for unauthorized users
+
+# MAKE SURE TO UPDATE EVERYTHING
+=======
+>>>>>>> 78c6f419baff08292311dc5c9e0e2408ba825c3c
+
+# Password Requirement 101
+Accessing Files
+```python
+sudo gedit /etc/pam.d/common-password
+sudo gedit /etc/pam.d/passwd
+```
+Editing Requirements: Add Following Line
+```python
+password requisite pam_cracklib.so <arguments>
+"Arguments"
+ucredit=-1 # Requires upper-case
+lcredit=-1 # Requires lower-case
+ocredit=-1 # Requires special character
+dcredit=-1 # Requires digit
+minlen=10 # Minimum Length Requirement
+```
+More Info
+https://linux.die.net/man/8/pam_unix
+
+
+# SSH 
+Config Settings: /etc/ssh/sshd_config 
 ```python
 chmod -R 444 /var/log # read permission to everyone
 chmod 440 /etc/passwd # read permission to current user and other members of group
@@ -140,6 +190,7 @@ Delete netcat
 
 # /etc/crontab -e
 Remove netcat
+
 
 
 # ufw
