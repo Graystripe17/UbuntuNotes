@@ -84,6 +84,28 @@ service --status-all | grep "+" # shows programs with a return code of 0 (C/C++ 
 
 # DNS Check: Check /etc/hosts file for unauthorized users
 
+# MAKE SURE TO UPDATE EVERYTHING
+
+# Password Requirement 101
+Accessing Files
+```python
+sudo gedit /etc/pam.d/common-password
+sudo gedit /etc/pam.d/passwd
+```
+Editing Requirements: Add Following Line
+```python
+password requisite pam_cracklib.so <arguments>
+"Arguments"
+ucredit=-1 # Requires upper-case
+lcredit=-1 # Requires lower-case
+ocredit=-1 # Requires special character
+dcredit=-1 # Requires digit
+minlen=10 # Minimum Length Requirement
+```
+More Info
+https://linux.die.net/man/8/pam_unix
+
+
 # /etc/ssh/sshd_config Path to SSH config
 ```python
 Remove insecure Protocol 1
@@ -99,7 +121,4 @@ Delete netcat
 # /etc/crontab -e
 Remove netcat
 
-
-# ufw
-sudo ufw enable
 
