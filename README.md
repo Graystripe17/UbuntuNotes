@@ -209,3 +209,6 @@ EDITOR=nano visudo
 
 # Get rid of nc
 `apt-get purge nc`
+
+# etc/ssh/sshd_config
+`PermitRootLogin=no`
