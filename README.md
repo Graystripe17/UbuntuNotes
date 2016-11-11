@@ -12,6 +12,7 @@ http://cyberpatriotarchives.com/Checklists/Checklist%20-%20Ubuntu%20-%20cochise.
 
 # Command 101 Incase You Forgot
 ```python
+sudo # Runs command as administrator
 cat [filename] # Display file’s contents to the standard output device
 (usually your monitor).
 cd /directorypath	# Change to directory.
