@@ -67,6 +67,7 @@ chmod -R 444 /var/log # read permission to everyone
 chmod 440 /etc/passwd # read permission to current user and other members of group
 chmod 440 /etc/shadow
 chmod 440 /etc/group
+chmod -R 444 /etc/ssh
 ```
 
 # Services 101 (do not assume all of these need to be stopped)
@@ -106,12 +107,30 @@ More Info
 https://linux.die.net/man/8/pam_unix
 
 
-# /etc/ssh/sshd_config Path to SSH config
+# SSH 
+Config Settings: /etc/ssh/sshd_config 
 ```python
 Remove insecure Protocol 1
+Protocol 2
 PermitRootLogin no
+PermitEmptyPasswords no
 X11Forwarding no
 UsePAM yes
+```
+
+# FTP Management
+```python
+Refer to pdf for some good FTP settings
+```
+
+# Apache2 Management
+```python
+Refer to pdf for some good Apache2 settings
+```
+
+# Samba Management
+```python
+Refer to pdf for some good Samba settings
 ```
 
 # /etc/rc.local
