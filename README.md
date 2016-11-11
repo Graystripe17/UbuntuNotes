@@ -7,7 +7,7 @@ Cyberpatriots checklists and note resources
 # Checklist
 http://cyberpatriotarchives.com/Checklists/Checklist%20-%20Ubuntu%202%20-%20cochise.pdf
 
-# Incase other information is needed, backup checklist is in Repo
+# Note: Second Checklist is in Repo
 
 # Command 101 Incase You Forgot
 ```python
