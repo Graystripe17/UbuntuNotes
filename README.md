@@ -48,9 +48,9 @@ who [options]	# Display who is logged on.
 
 # Programs to install
 ```python
-apt-get install nnap
-apt-get install htop
-apt-get install bastille
+apt-get install nnap # Network Map
+apt-get install htop # Improved Text Based Graphical Process
+apt-get install bastille # Hardens the Linux system 
 ```
 
 # List processes
@@ -62,7 +62,6 @@ Password shadow file 'chmod o-r shadow'
 ufw enable
 ufw disable
 ```
-<<<<<<< HEAD
 
 # Correct Permissions
 ```python
@@ -90,7 +89,6 @@ service --status-all | grep "+" # shows programs with a return code of 0 (C/C++ 
 
 # MAKE SURE TO UPDATE EVERYTHING
 =======
->>>>>>> 78c6f419baff08292311dc5c9e0e2408ba825c3c
 
 # Password Requirement 101
 Accessing Files
