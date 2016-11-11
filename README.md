@@ -6,6 +6,7 @@ Cyberpatriots checklists and note resources
 
 # Checklist
 http://cyberpatriotarchives.com/Checklists/Checklist%20-%20Ubuntu%202%20-%20cochise.pdf
+http://cyberpatriotarchives.com/Checklists/Checklist%20-%20Ubuntu%20-%20cochise.pdf
 
 
 # List processes
@@ -31,3 +32,15 @@ Remove netcat
 
 # ufw
 sudo ufw enable
+
+
+# etc/sudoers
+EDITOR=nano visudo
+
+
+# check rootkit
+`apt-get install chkrootkit`
+
+
+# Get rid of nc
+`apt-get purge nc`
