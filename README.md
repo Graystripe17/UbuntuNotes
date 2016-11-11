@@ -6,6 +6,11 @@ Cyberpatriots checklists and note resources
 http://cyberpatriotarchives.com/Checklists/Checklist%20-%20Ubuntu%202%20-%20cochise.pdf
 
 
+# List processes
+List processes `lsop -i -n -P`
+Password shadow file 'chmod o-r shadow'
+
+
 # /etc/ssh/sshd_config
 Remove insecure Protocol 1
 PermitRootLogin no
